@@ -1,0 +1,5 @@
+baseURL = "/"
+languageCode = "sk"
+title = "Môj jednoduchý Hugo web"
+paginate = 10
+enableRobotsTXT = true
