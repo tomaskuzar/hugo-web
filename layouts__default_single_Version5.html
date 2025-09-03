@@ -1,0 +1,8 @@
+{{ define "main" }}
+<article>
+  <h1>{{ .Title }}</h1>
+  <p><small>{{ .Date.Format "2006-01-02" }}</small></p>
+  {{ .Content }}
+  <p style="margin-top:2rem;"><a href="{{ "/posts/" | relURL }}">← späť na zoznam</a></p>
+</article>
+{{ end }}

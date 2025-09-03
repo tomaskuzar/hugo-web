@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8" />
+  <title>{{ if .Title }}{{ .Title }} | {{ end }}{{ site.Title }}</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="generator" content="Hugo {{ hugo.Version }}" />
+  <link rel="stylesheet" href="{{ "css/site.css" | relURL }}">
+</head>
+<body>
+  <header>
+    <h1><a href="{{ "/" | relURL }}">{{ site.Title }}</a></h1>
+    <nav><a href="{{ "/posts/" | relURL }}">Články</a></nav>
+    <hr>
+  </header>
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+  <footer>
+    <hr>
+    <p>&copy; {{ now.Year }} {{ site.Title }} · Generated with Hugo</p>
+  </footer>
+</body>
+</html>
